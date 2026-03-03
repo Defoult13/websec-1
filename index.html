@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Калькулятор</title>
+</head>
+
+<body>
+  <div class="box">
+    <div class="gridBox">
+      <div class="fieldWrap">
+        <input id="value1" type="text" class="input" value="123">
+        <div id="err1" class="err"></div>
+      </div>
+
+      <select id="operation" class="input">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+
+      <div class="fieldWrap">
+        <input id="value2" type="text" class="input" value="567">
+        <div id="err2" class="err"></div>
+      </div>
+    </div>
+
+    <div class="flexBox">
+      <button class="input btn" type="button" onclick="whenButtonClicked()">подсчитать</button>
+    </div>
+
+    <div id="results" class="input results">Результат</div>
+  </div>
+</body>
+</html>
